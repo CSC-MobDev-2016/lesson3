@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">lesson3</string>
+    <string name="app_name">SuperTranslator</string>
+    <string name="go_button_text">GO</string>
 </resources>
