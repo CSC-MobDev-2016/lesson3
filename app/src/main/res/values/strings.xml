@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lesson3</string>
+    <string name="translate_button_text">Translate</string>
 </resources>
