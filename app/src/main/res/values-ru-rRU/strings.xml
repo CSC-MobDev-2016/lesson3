@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_text">Текст не введен</string>
+    <string name="no_translation">Перевод не найден</string>
+    <string name="no_images">Изображения не найдены</string>
+</resources>
