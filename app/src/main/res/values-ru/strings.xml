@@ -1,0 +1,12 @@
+<resources>
+    <string name="btn_translate">Перевести</string>
+    <string name="from">От</string>
+    <string name="to">к</string>
+    <string name="err_not_found_in_dictionary">Текст в словаре не найден</string>
+    <string name="err_common">Не получилось перевести сообщение.
+                              Возможно проблемы с интернетом. Проверь интернет соединение.
+                              Если это не помогло, то скорее всего это внутренняя ошибка.
+                              Обратитесь в поддержку.</string>
+    <string name="translating">Перевод</string>
+    <string name="please_wait">Пожалуйста подождите</string>
+</resources>
