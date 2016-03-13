@@ -251,6 +251,7 @@ public class WordTranslateActivity extends AppCompatActivity {
             return data;
         }
 
+        // https://github.com/arvifox/android_image_url_listview
         @Override
         protected void onPostExecute(ArrayList<Map<String, Object>> data) {
             ListView listView = (ListView) findViewById(R.id.image_list);
