@@ -46,6 +46,17 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
 
         listViewTranslations = (ListView) findViewById(R.id.listView);
         imageGrid = (GridView) findViewById(R.id.gridView);
+
+        imageGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parant, View view, int position, long id) {
+                Intent intent = new Intent(Activity2.this, FullImageActivity.class);
+                intent.putExtra("position", position);
+                intent.putParcelableArrayListExtra("imagelist", imagesList);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -156,16 +167,6 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
             GridImageAdapter adapter = new GridImageAdapter(Activity2.this, imagesList);
             imageGrid.setAdapter(adapter);
 
-            imageGrid.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-
-                @Override
-                public void onItemClick(AdapterView<?> parant, View view, int position, long id){
-                    Intent intent = new Intent(Activity2.this, FullImageActivity.class);
-                    intent.putExtra("position", position);
-                    intent.putParcelableArrayListExtra("imagelist", imagesList);
-                    startActivity(intent);
-                }
-            });
         }
     }
 
