@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lesson3</string>
+    <string name="go_button">Go!</string>
 </resources>
