@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">lesson3</string>
+    <string name="app_name">PhotoTranslator</string>
+    <string name="search_button">Search</string>
+    <string name="empty_translation">No translation found</string>
+
+    <string-array name="language_array">
+        <item>En->Ru</item>
+        <item>Ru->En</item>
+    </string-array>
+
 </resources>
