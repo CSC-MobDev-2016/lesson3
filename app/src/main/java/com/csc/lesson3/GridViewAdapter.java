@@ -26,6 +26,9 @@ public class GridViewAdapter extends ArrayAdapter {
         this.context = context;
         this.data = data;
     }
+    public void setData(ArrayList data) {
+        this.data = data;
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

@@ -49,11 +49,11 @@ public class ImageSearch {
     public static List<String> parseImagesFromJSON(String str) {
         try {
             JSONObject object = new JSONObject(str);
-            JSONArray array = (JSONArray) object.get("text");
+            JSONArray array = object.getJSONObject("d").getJSONArray("results");
             List<String> images = new ArrayList<String>();
 
             for (int i = 0; i < array.length(); ++i) {
-                images.add(array.get(i).toString());
+                images.add(array.getJSONObject(i).getString("MediaUrl"));
             }
 
             return images;

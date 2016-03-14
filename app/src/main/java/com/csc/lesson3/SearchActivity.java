@@ -17,7 +17,7 @@ import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
 
-    ArrayList<Bitmap> images;
+    ArrayList<Bitmap> images = new ArrayList<>();
     TextView textView;
     private GridView gridView;
     private GridViewAdapter gridAdapter;
@@ -67,6 +67,8 @@ public class SearchActivity extends AppCompatActivity {
         protected void onPostExecute(List<Bitmap> res) {
             super.onPostExecute(res);
             images.addAll(res);
+            gridAdapter.setData(images);
+            gridView.setAdapter(gridAdapter);
         }
 
         @Override
@@ -78,6 +80,7 @@ public class SearchActivity extends AppCompatActivity {
                 for(String path: result) {
                     URL url = new URL(path);
                     Bitmap img = BitmapFactory.decodeStream(url.openStream());
+                    images.add(img);
                 }
             } catch (Exception e) {}
             return images;
